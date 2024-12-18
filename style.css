@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: Tan;
+}
+.stopwatch {
+  width: 70%;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 10px;
+}
+.start,
+.pause,
+.reset {
+  width: 40%;
+  border: 0;
+  height: 25px;
+  background-color: chocolate;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .stopwatch {
+    width: 30%;
+  }
+}
